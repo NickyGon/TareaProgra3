@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/topmenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ig_back"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ig_title"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menuSelf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#FAFAFA"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ig_menuhome"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ig_menusearch"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ig_menupost"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ig_menunotif"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="20"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ig_menuprof"/>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/menuSelf"
+        android:layout_below="@id/topmenu"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"><![CDATA[
+
+        >
+
+
+        ]]>
+
+        <RelativeLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:id="@+id/photoprof"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                app:srcCompat="@drawable/ig_profphoto" />
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/photoprof"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/nameprof"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    app:srcCompat="@drawable/ig_profname" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_below="@id/nameprof"
+                    android:layout_weight="50"
+
+                    app:srcCompat="@drawable/ig_profloc" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/menuprof"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                app:srcCompat="@drawable/ig_profmenu" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_below="@id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/ig_photo"
+            android:layout_above="@id/contentIG"
+            />
+
+        <LinearLayout
+            android:id="@+id/contentIG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/ig_like" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/ig_comments" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/ig_share" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="60"
+                    app:srcCompat="@drawable/ig_scroll"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    app:srcCompat="@drawable/ig_save" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ig_likedwho" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ig_author"
+                    />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_weight="70"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ig_descr" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
